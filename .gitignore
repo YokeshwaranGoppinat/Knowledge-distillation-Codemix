@@ -1,24 +1,34 @@
-# Python artifacts
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Jupyter Notebook checkpoints
+# Jupyter
 .ipynb_checkpoints/
 
 # OS junk
 .DS_Store
 
-# Model weights / checkpoint files
+# Models / checkpoints
 *.bin
 *.pt
 *.pth
+*.ckpt
 
-# Virtual env
+# Virtual envs
 .env/
 .venv/
+venv/
 
-# HuggingFace cache
+# HuggingFace & datasets cache
 .cache/
 huggingface/
+datasets/
+
+# Large files
+*.tar.gz
+*.zip
+
+# Notebook outputs (optional)
+output/
