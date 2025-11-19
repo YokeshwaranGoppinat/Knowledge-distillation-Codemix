@@ -107,7 +107,7 @@ Open `notebooks/` and run:
 
 You can also run the project locally without Colab:
 
-```bash
+``bash
 git clone https://github.com/YokeshwaranGoppinat/Knowledge-distillation-Codemix.git
 cd Knowledge-distillation-Codemix
 
@@ -123,7 +123,6 @@ pip install -r requirements.txt
 # Run the fast smoke test to validate the pipeline
 python smoke_test.py
 
----
 
 # 🧪 Student Model Variants
 
