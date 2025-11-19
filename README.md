@@ -103,6 +103,28 @@ Open `notebooks/` and run:
 
 ---
 
+## Quick start (local)
+
+You can also run the project locally without Colab:
+
+```bash
+git clone https://github.com/YokeshwaranGoppinat/Knowledge-distillation-Codemix.git
+cd Knowledge-distillation-Codemix
+
+# (optional but recommended) create a virtual environment
+python -m venv .venv
+# macOS / Linux:
+source .venv/bin/activate
+# Windows (PowerShell):
+# .venv\Scripts\Activate.ps1
+
+pip install -r requirements.txt
+
+# Run the fast smoke test to validate the pipeline
+python smoke_test.py
+
+---
+
 # 🧪 Student Model Variants
 
 | Variant | Description |
