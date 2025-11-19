@@ -5,6 +5,7 @@ import torch, torch.nn as nn, torch.optim as optim
 from types import SimpleNamespace
 from torch.utils.data import DataLoader
 from trainer import train, evaluate
+from utils import set_seed
 
 class SimpleClassifier(nn.Module):
     def __init__(self, vocab_size=200, seq_len=16, embed_dim=16, num_classes=2):
@@ -29,6 +30,7 @@ def make_synthetic_loader(num_samples=40, seq_len=16, num_classes=2, batch_size=
     return DataLoader(examples, batch_size=batch_size, shuffle=True, collate_fn=collate_fn)
 
 def main():
+    set_seed(42)
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     train_loader = make_synthetic_loader()
     val_loader = make_synthetic_loader(num_samples=20)
